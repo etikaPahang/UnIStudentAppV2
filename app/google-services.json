@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "832240155589",
+    "firebase_url": "https://unistudentappv2.firebaseio.com",
+    "project_id": "unistudentappv2",
+    "storage_bucket": "unistudentappv2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:832240155589:android:263d15f7e2d310f1",
+        "android_client_info": {
+          "package_name": "com.unistudent.app.unistudentappv2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "832240155589-73j2eb4svga51actcjj5pf7id1jt9ch2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.unistudent.app.unistudentappv2",
+            "certificate_hash": "e15e9c55d9b322ac1e9d92b6632e024647e2a9fc"
+          }
+        },
+        {
+          "client_id": "832240155589-8f8lkl3chu33b80v7ci2gcln8gv4eni2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBcrpRzOwhwpoKYDhP-oX-hiBr1atDWL-8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "832240155589-8f8lkl3chu33b80v7ci2gcln8gv4eni2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

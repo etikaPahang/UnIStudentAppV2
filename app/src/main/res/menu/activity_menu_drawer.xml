@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_schedule"
+            android:icon="@drawable/flatdesign_schedule"
+            android:title="Scedule" />
+        <item
+            android:id="@+id/nav_event"
+            android:icon="@drawable/flatdesign_notif"
+            android:title="Event" />
+        <item
+            android:id="@+id/nav_exercise"
+            android:icon="@drawable/flatdesign_test"
+            android:title="Exercise" />
+        <item
+            android:id="@+id/nav_comment"
+            android:icon="@drawable/flatdesign_chat"
+            android:title="Comment" />
+    </group>
+
+    <item android:title="Test">
+        <menu>
+            <item
+                android:id="@+id/nav_test1"
+                android:icon="@drawable/flatdesign_report"
+                android:title="Test 1" />
+            <item
+                android:id="@+id/nav_test2"
+                android:icon="@drawable/flatdesign_report"
+                android:title="Test 2" />
+            <item
+                android:id="@+id/nav_test3"
+                android:icon="@drawable/flatdesign_report"
+                android:title="Test 3" />
+        </menu>
+    </item>
+</menu>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbarStyle="insideInset"
+    android:scrollbars="vertical"
+    tools:context="com.unistudent.app.unistudentappv2.CommentActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp">
+        <TextView
+            android:id="@+id/teacher_name_comment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Teacher_name"/>
+        <TextView
+            android:id="@+id/date_comment"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="date 0;0;0;0"/>
+        <TextView
+            android:id="@+id/comment_text"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tokoh
+
+Perusahaan ISP X
+Service desk (Muslikh) - SDI
+Staff Operasional (Pahang) -- SO
+Manager IT (Thoni) - MIT
+
+Customer Univ X
+Kepala Departemen Puskom (Muslikh) - KDP
+Staff Puskom (Pahang) - SP
+
+Supplier PT X
+Service desk (Pahang) - SDS
+Staff Operasional (Thoni) - SOS
+Manager Marketing (Muslikh) - MM
+
+
+Scenario:
+
+Product (SLR)
+
+	KDP menimbang kebutuhan akan internet di Univ X.
+	KDP memerintahkan SP menghubungi SDI.
+	SP menghubungi SDI.
+	SO datang ke Univ X.
+	SO mewawancarai KDP.
+	SO menghasilkan SLR.
+
+Product (SLA)
+
+	SO memaparkan hasil SLR kepada MIT.
+	MIT mengkaji SLR.
+	MIT menghasilkan R-SLA.
+	SO datang ke Univ X.
+	SO dan Univ X mengesahkan SLA.
+
+Product (OLA)
+
+	MIT memaparkan SLA.
+	MIT dan seluruh bagian internal perusahaan yang terkait menghasilkan OLA.
+
+Product (UC)
+
+	SO menghubungi SDS.
+	SOS datang ke perusahaan X.
+	SOS menerima R-UC.
+	MM  menimbang UC.
+	MM dan MIT mengesahkan UC.
+
+
+
+
+
+
+
+
+"/>
+    </LinearLayout>
+</ScrollView>

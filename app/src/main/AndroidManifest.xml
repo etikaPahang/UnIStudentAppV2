@@ -31,7 +31,8 @@
         <activity android:name=".TestResultActivity" />
         <activity android:name=".CommentActivity" />
         <activity android:name=".LogInActivity" />
-        <activity android:name=".RaportActivity"></activity>
+        <activity android:name=".RaportActivity" />
+        <activity android:name=".ScheduleActivity"></activity>
     </application>
 
 </manifest>

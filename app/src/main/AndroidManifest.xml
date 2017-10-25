@@ -13,7 +13,7 @@
         android:label="@string/app_name"
         android:roundIcon="@drawable/logo"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
         <activity
             android:name=".SplashActivity"
             android:label="@string/app_name"
@@ -27,12 +27,16 @@
         <activity android:name=".MenuActivity" />
         <activity android:name=".EventListActivity" />
         <activity android:name=".ExerciseActivity" />
+        <activity android:name=".ExerciseListActivity" />
         <activity android:name=".CommentListActivity" />
         <activity android:name=".TestResultActivity" />
         <activity android:name=".CommentActivity" />
         <activity android:name=".LogInActivity" />
+<<<<<<< HEAD
         <activity android:name=".RaportActivity" />
         <activity android:name=".ScheduleActivity"></activity>
+=======
+>>>>>>> 73ed5c52f4916a4dc5ee1da4445a7ca0f2961476
     </application>
 
 </manifest>

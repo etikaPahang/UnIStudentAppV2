@@ -1,17 +1,47 @@
 package com.unistudent.app.unistudentappv2.models;
 
+import java.util.Date;
+
 /**
  * Created by user on 18/10/2017.
  */
 
-public class Exercise {
+public class ExerciseContent {
     private int number;
     private String question;
     private String answer;
-    public Exercise(int number, String question, String answer){
+    private Date dueDate;
+    private Date uploadedDate;
+    private String name;
+
+    public ExerciseContent(int number, String question, String answer){
         this.number = number;
         this.question = question;
         this.answer = answer;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public Date getDueDate() {
+        return dueDate;
+    }
+
+    public void setDueDate(Date dueDate) {
+        this.dueDate = dueDate;
+    }
+
+    public Date getUploadedDate() {
+        return uploadedDate;
+    }
+
+    public void setUploadedDate(Date uploadedDate) {
+        this.uploadedDate = uploadedDate;
     }
 
     public int getNumber() {

@@ -27,14 +27,11 @@
         <activity android:name=".MenuActivity" />
         <activity android:name=".EventListActivity" />
         <activity android:name=".ExerciseActivity" />
+        <activity android:name=".ExerciseListActivity" />
         <activity android:name=".CommentListActivity" />
         <activity android:name=".TestResultActivity" />
         <activity android:name=".CommentActivity" />
         <activity android:name=".LogInActivity" />
-        <activity
-            android:name=".ExerciseListActivity"
-            android:label="@string/title_activity_exercise_list"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar"></activity>
     </application>
 
 </manifest>

@@ -16,6 +16,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.ImageView;
+import android.widget.Toast;
 
 import de.hdodenhof.circleimageview.CircleImageView;
 
@@ -119,18 +120,22 @@ public class MenuActivity extends AppCompatActivity
         // Handle navigation view item clicks here.
         int id = item.getItemId();
         switch(id){
-            case R.id.nav_schedule :  break;
+            case R.id.nav_schedule : waitUntilNextRilis(); break;
             case R.id.nav_event : startActivity(new Intent(MenuActivity.this, EventListActivity.class)); break;
-            case R.id.nav_exercise : startActivity(new Intent(MenuActivity.this, ExerciseListActivity.class)); break;
+            case R.id.nav_exercise : waitUntilNextRilis(); break;
             case R.id.nav_comment : startActivity(new Intent(MenuActivity.this, CommentListActivity.class)); break;
-            case R.id.nav_test1 : break;
-            case R.id.nav_test2 : break;
-            case R.id.nav_test3 : break;
-            default: break;
+            case R.id.nav_test1 : waitUntilNextRilis(); break;
+            case R.id.nav_test2 : waitUntilNextRilis(); break;
+            case R.id.nav_test3 : waitUntilNextRilis(); break;
+            default: waitUntilNextRilis(); break;
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;
+    }
+
+    private void waitUntilNextRilis(){
+        Toast.makeText(MenuActivity.this, "Wait until next rilis.", Toast.LENGTH_LONG).show();
     }
 }

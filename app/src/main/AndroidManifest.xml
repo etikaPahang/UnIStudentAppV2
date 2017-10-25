@@ -32,6 +32,10 @@
         <activity android:name=".TestResultActivity" />
         <activity android:name=".CommentActivity" />
         <activity android:name=".LogInActivity" />
+        <activity
+            android:name=".EventActivity"
+            android:label="@string/title_activity_event"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"></activity>
     </application>
 
 </manifest>

@@ -11,9 +11,10 @@ public class Comment {
     private Date commentDate;
     private String text;
 
-    public Comment(String teacherName, Date commentDate) {
+    public Comment(String teacherName, Date commentDate, String text) {
         this.teacherName = teacherName;
         this.commentDate = commentDate;
+        this.text = text;
     }
 
     public String getTeacherName() {

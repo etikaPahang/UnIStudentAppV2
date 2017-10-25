@@ -5,7 +5,8 @@
     android:paddingLeft="2dp"
     android:paddingRight="2dp">
 
-    <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
         android:id="@+id/card_view"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -33,7 +34,7 @@
                     android:layout_height="40dp"
                     android:gravity="center_vertical"
                     android:textSize="15sp"
-                    android:text="Nama event"/>
+                    android:text="Nama Guru"/>
 
                 <TextView
                     android:id="@+id/tanggal_comment_card"
@@ -41,7 +42,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="20dp"
                     android:gravity="center_vertical"
-                    android:text="Tanggal event"/>
+                    android:text="Tanggal"/>
 
             </LinearLayout>
 

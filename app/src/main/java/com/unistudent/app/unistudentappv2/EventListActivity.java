@@ -1,6 +1,7 @@
 package com.unistudent.app.unistudentappv2;
 
 import android.content.Intent;
+import android.media.Image;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -9,6 +10,8 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
+import android.widget.TextView;
+import android.widget.Toast;
 
 import com.unistudent.app.unistudentappv2.adapters.EventAdapter;
 import com.unistudent.app.unistudentappv2.models.Event;
@@ -22,15 +25,17 @@ public class EventListActivity extends AppCompatActivity {
     private RecyclerView.LayoutManager mLayoutManager;
     private List<Event> eventList;
     private EventAdapter eventAdapter;
+    private TextView tvNoListText;
 
-    String[] names = {"question 1", "question 2", "question 1", "question 2",
-            "question 1", "question 2", "question 1", "question 2", "question 1", "question 2"};
+    private Image[] images = {};
+    private String[] names = {};
+    private Date[] dates = {};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_event_list);
-
+        tvNoListText = (TextView) findViewById(R.id.text_keterangan_tidak_ada_event);
         Toolbar myToolbar = (Toolbar) findViewById(R.id.my_toolbar);
         setSupportActionBar(myToolbar);
         setTitle("Upcoming Event");
@@ -43,28 +48,30 @@ public class EventListActivity extends AppCompatActivity {
                 startActivity(new Intent(EventListActivity.this, MenuActivity.class));
             }
         });
-
         mRecycleView = (RecyclerView) findViewById(R.id.recycler_view_event);
 
-        if(mRecycleView != null){
-            mRecycleView.setHasFixedSize(true);
+        if(names.length>0) {
+            if (mRecycleView != null) {
+                mRecycleView.setHasFixedSize(true);
+            }
+
+            mLayoutManager = new LinearLayoutManager(this);
+
+            mRecycleView.setLayoutManager(mLayoutManager);
+
+            eventList = new ArrayList<>();
+
+            for (int i = 0; i < names.length; i++) {
+                Event event = new Event(images[i], names[i], dates[i]);
+                this.eventList.add(event);
+            }
+
+            eventAdapter = new EventAdapter(eventList);
+
+            mRecycleView.setAdapter(eventAdapter);
+            eventAdapter.notifyDataSetChanged();
+        }else{
+            tvNoListText.setText("There is no upcoming event yet");
         }
-
-        mLayoutManager = new LinearLayoutManager(this);
-
-        mRecycleView.setLayoutManager(mLayoutManager);
-
-        eventList = new ArrayList<>();
-
-        for (int i = 0; i< names.length; i++){
-            Date date = new Date();
-            Event event = new Event(R.mipmap.pahang, names[i], date);
-            this.eventList.add(event);
-        }
-
-        eventAdapter = new EventAdapter(eventList);
-
-        mRecycleView.setAdapter(eventAdapter);
-        eventAdapter.notifyDataSetChanged();
     }
 }

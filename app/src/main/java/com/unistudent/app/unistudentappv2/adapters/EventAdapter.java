@@ -4,6 +4,7 @@ package com.unistudent.app.unistudentappv2.adapters;
  * Created by user on 18/10/2017.
  */
 
+import android.graphics.Bitmap;
 import android.support.v7.widget.CardView;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -49,7 +50,7 @@ public class EventAdapter extends RecyclerView.Adapter<EventAdapter.ViewHolder> 
         Event event = this.eventList.get(position);
         holder.tvNama.setText(event.getName());
         holder.tvTanggal.setText(event.getDate().toString());
-        holder.ivImage.setImageResource(event.getImage());
+        //holder.ivImage.setImage
         holder.cvEventList.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
                 // eventListClicked

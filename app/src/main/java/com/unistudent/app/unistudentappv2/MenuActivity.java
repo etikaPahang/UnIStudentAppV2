@@ -3,13 +3,9 @@ package com.unistudent.app.unistudentappv2;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
-import android.provider.ContactsContract;
 import android.provider.MediaStore;
-import android.support.design.widget.CoordinatorLayout;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
-import android.text.Layout;
-import android.util.Log;
 import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -20,10 +16,6 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.ImageView;
-import android.widget.LinearLayout;
-
-import com.unistudent.app.unistudentappv2.models.Comment;
-import com.unistudent.app.unistudentappv2.models.Exercise;
 
 import de.hdodenhof.circleimageview.CircleImageView;
 
@@ -129,7 +121,7 @@ public class MenuActivity extends AppCompatActivity
         switch(id){
             case R.id.nav_schedule :  break;
             case R.id.nav_event : startActivity(new Intent(MenuActivity.this, EventListActivity.class)); break;
-            case R.id.nav_exercise : startActivity(new Intent(MenuActivity.this, ExerciseActivity.class)); break;
+            case R.id.nav_exercise : startActivity(new Intent(MenuActivity.this, ExerciseListActivity.class)); break;
             case R.id.nav_comment : startActivity(new Intent(MenuActivity.this, CommentListActivity.class)); break;
             case R.id.nav_test1 : break;
             case R.id.nav_test2 : break;

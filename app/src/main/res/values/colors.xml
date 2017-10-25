@@ -4,6 +4,8 @@
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
 
+    <color name="white">#FFF</color>
+
     <color name="black_overlay">#66000000</color>
 
     <color name="kuningUni">#FFF212</color>

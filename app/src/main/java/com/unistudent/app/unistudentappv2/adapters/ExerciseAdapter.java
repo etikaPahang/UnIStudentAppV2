@@ -6,7 +6,7 @@ import android.view.ViewGroup;
 import android.widget.EditText;
 import android.widget.TextView;
 import com.unistudent.app.unistudentappv2.R;
-import com.unistudent.app.unistudentappv2.models.Exercise;
+import com.unistudent.app.unistudentappv2.models.ExerciseContent;
 import java.util.List;
 /**
  * Created by user on 18/10/2017.
@@ -15,7 +15,7 @@ import java.util.List;
 
 
 public class ExerciseAdapter extends RecyclerView.Adapter<ExerciseAdapter.ViewHolder> {
-    private List<Exercise> exerciseList;
+    private List<ExerciseContent> exerciseList;
 
     public static class ViewHolder extends RecyclerView.ViewHolder{
         public TextView tvNumber;
@@ -30,7 +30,7 @@ public class ExerciseAdapter extends RecyclerView.Adapter<ExerciseAdapter.ViewHo
         }
     }
 
-    public ExerciseAdapter (List<Exercise> exerciseList){this.exerciseList = exerciseList;}
+    public ExerciseAdapter (List<ExerciseContent> exerciseList){this.exerciseList = exerciseList;}
 
     public ExerciseAdapter.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType){
         View v = LayoutInflater.from(parent.getContext()).inflate(R.layout.exercise_card, parent, false);
@@ -39,7 +39,7 @@ public class ExerciseAdapter extends RecyclerView.Adapter<ExerciseAdapter.ViewHo
     }
 
     public void onBindViewHolder(ExerciseAdapter.ViewHolder holder, int position){
-        Exercise exercise = exerciseList.get(position);
+        ExerciseContent exercise = exerciseList.get(position);
         holder.tvNumber.setText(String.valueOf(exercise.getNumber()));
         holder.tvQuestion.setText(exercise.getQuestion());
         holder.etAnswer.setText(exercise.getAnswer());

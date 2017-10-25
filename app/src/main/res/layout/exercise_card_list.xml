@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp">
+
+    <TextView
+        android:id="@+id/exercise_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Exercise 1"
+        android:textSize="30sp"/>
+    <TextView
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/exercise_uploaded"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="uploaded at 000"/>
+    <TextView
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/exercise_duedate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="duedate at 000"/>
+
+</LinearLayout>

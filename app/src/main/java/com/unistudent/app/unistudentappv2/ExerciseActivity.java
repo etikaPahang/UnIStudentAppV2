@@ -6,7 +6,7 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 
 import com.unistudent.app.unistudentappv2.adapters.ExerciseAdapter;
-import com.unistudent.app.unistudentappv2.models.Exercise;
+import com.unistudent.app.unistudentappv2.models.ExerciseContent;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -14,7 +14,7 @@ import java.util.List;
 public class ExerciseActivity extends AppCompatActivity {
     private RecyclerView mRecycleView;
     private RecyclerView.LayoutManager mLayoutManager;
-    private List<Exercise> exerciseList;
+    private List<ExerciseContent> exerciseList;
     private ExerciseAdapter exerciseAdapter;
 
     String[] names = {"question 1", "question 2"};
@@ -36,7 +36,7 @@ public class ExerciseActivity extends AppCompatActivity {
         exerciseList = new ArrayList<>();
 
         for (int i = 0; i< names.length; i++){
-            Exercise album = new Exercise(i+1, names[i], "");
+            ExerciseContent album = new ExerciseContent(i+1, names[i], "");
             exerciseList.add(album);
         }
 
